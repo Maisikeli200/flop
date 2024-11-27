@@ -41,7 +41,7 @@ export default function Component() {
   useEffect(() => {
     // Rotate the page after 3 seconds
     const rotationTimer = setTimeout(() => {
-      setIsRotated(true)
+      setIsRotated(false)
     }, 4000)
 
     const interval = setInterval(() => {

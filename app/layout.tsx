@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Revcat",
+  title: "invert cat",
   description: "cat from reverse universe comes to solana",
 };
 

@@ -93,7 +93,7 @@ export default function Component() {
         {/* Title */}
         <div className="flex flex-col items-center">
           <h1 className="text-3xl md:text-5xl font-black text-center mb-2">
-            $REVCAT
+            $NVRCAT
           </h1>
           <p className="text-sm text-gray-600 mb-4 flex items-center gap-2">
             CA: {contractAddress}
@@ -112,7 +112,7 @@ export default function Component() {
             {/* Left Text */}
             <div className="space-y-2">
               <p className="text-sm md:text-base font-bold text-center uppercase leading-tight">
-                $REVCAT 🐱 The boldest cat from the reverse universe is here to take you reverse universe too.
+                $NVRCAT 🐱 The boldest cat from the Revertia universe is here to take you reverse universe too.
               </p>
             </div>
 
@@ -126,18 +126,33 @@ export default function Component() {
             {/* Right Buttons */}
             <div className="flex flex-col items-center gap-2">
               <div className="flex gap-2">
+              <Link href="https://x.com/revcat_sol" target="_blank">
                 <Button variant="outline" size="icon" className="rounded-full">
                   <Twitter className="w-4 h-4" />
                 </Button>
+              </Link>
+
+              <Link href="https://t.me/revcat_sol" target="_blank">
                 <Button variant="outline" size="icon" className="rounded-full">
                   <Send className="w-4 h-4" />
                 </Button>
+              </Link>
+
+              <Link href={`https://pump.fun/coin/${contractAddress}`} target="_blank">
                 <Button variant="outline" size="icon" className="rounded-full">
                   <Instagram className="w-4 h-4" />
                 </Button>
+              </Link>
+              </div>
+
+              <Link href={`https://pump.fun/coin/${contractAddress}`} target="_blank">
+                <Button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 py-2 text-sm">
+                  BUY $FLOP
+                </Button>
+              </Link>
               </div>
               <Button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 py-2 text-sm">
-                BUY $REVCAT
+                BUY $NVRCAT
               </Button>
             </div>
           </div>
@@ -189,7 +204,7 @@ export default function Component() {
             transform: `translateX(-${scrollPosition}%)`,
           }}
         >
-          {Array(20).fill("BUY $REVCAT").map((text, i) => (
+          {Array(20).fill("BUY $NVRCAT").map((text, i) => (
             <span key={i} className="mx-4 text-lg font-bold" style={{ display: 'inline-block', transform: 'rotate(180deg)' }}>
               {flipText(text)}
             </span>

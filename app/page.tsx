@@ -93,7 +93,7 @@ export default function Component() {
         {/* Title */}
         <div className="flex flex-col items-center">
           <h1 className="text-3xl md:text-5xl font-black text-center mb-2">
-            $FLOPCAT
+            $REVCAT
           </h1>
           <p className="text-sm text-gray-600 mb-4 flex items-center gap-2">
             CA: {contractAddress}
@@ -108,11 +108,11 @@ export default function Component() {
           </p>
 
           {/* Content Grid */}
-          <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 items-center mb-4">
+          <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 items-center text-center mb-4">
             {/* Left Text */}
             <div className="space-y-2">
-              <p className="text-sm md:text-base font-bold uppercase leading-tight">
-                $FLOPCAT IS AN EDIBLE DIGITAL ASSET IN THE CRYPTOCURRENCY JUNGLE BUILT ON BASE
+              <p className="text-sm md:text-base font-bold text-center uppercase leading-tight">
+                $REVCAT 🐱 The boldest cat from the reverse universe is here to take you reverse universe too.
               </p>
             </div>
 
@@ -137,7 +137,7 @@ export default function Component() {
                 </Button>
               </div>
               <Button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 py-2 text-sm">
-                BUY $FLOP
+                BUY $REVCAT
               </Button>
             </div>
           </div>
@@ -189,7 +189,7 @@ export default function Component() {
             transform: `translateX(-${scrollPosition}%)`,
           }}
         >
-          {Array(20).fill("BUY $FLOPCAT").map((text, i) => (
+          {Array(20).fill("BUY $REVCAT").map((text, i) => (
             <span key={i} className="mx-4 text-lg font-bold" style={{ display: 'inline-block', transform: 'rotate(180deg)' }}>
               {flipText(text)}
             </span>

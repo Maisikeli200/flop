@@ -95,7 +95,7 @@ export default function Component() {
         {/* Title */}
         <div className="flex flex-col items-center">
           <h1 className="text-3xl md:text-5xl font-black text-center mb-2">
-            $FLIPKIT
+            $FLIPKITTY
           </h1>
           <p className="text-sm text-gray-600 mb-4 flex items-center gap-2">
             CA: {contractAddress}
@@ -114,7 +114,7 @@ export default function Component() {
             {/* Left Text */}
             <div className="space-y-2">
               <p className="text-sm md:text-base font-bold uppercase text-center leading-tight">
-                $FLIPKIT 🐱 The boldest cat from the reverse universe is here to take you reverse universe too.
+                $FLIPKITTY 🐱 The boldest cat from the reverse universe is here to take you reverse universe too.
               </p>
             </div>
 
@@ -149,7 +149,7 @@ export default function Component() {
 
               <Link href={`https://pump.fun/coin/${contractAddress}`} target="_blank">
                 <Button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 py-2 text-sm">
-                  BUY $FLIPKIT
+                  BUY $FLIPKITTY
                 </Button>
               </Link>
             </div>
@@ -201,7 +201,7 @@ export default function Component() {
             transform: `translateX(-${scrollPosition}%)`,
           }}
         >
-          {Array(20).fill("BUY $FLIPKIT").map((text, i) => (
+          {Array(20).fill("BUY $FLIPKITTY").map((text, i) => (
             <span key={i} className="mx-4 text-lg font-bold" style={{ display: 'inline-block', transform: 'rotate(180deg)' }}>
               {flipText(text)}
             </span>

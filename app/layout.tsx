@@ -14,8 +14,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "invert cat",
-  description: "cat from reverse universe comes to solana",
+  title: "FLIP KITTY",
+  description: "A cat from reverse universe comes to solana",
+  icons: "flop.svg",
 };
 
 export default function RootLayout({
